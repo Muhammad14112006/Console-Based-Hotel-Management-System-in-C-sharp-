@@ -1,0 +1,29 @@
+🏨 Hotel Booking & Billing System (HBBS)
+
+Developed by: Muhammad Hassaan (2025-CS-440)  
+Institution: University of Engineering and Technology (UET), Lahore  
+Course: Object-Oriented Programming (Semester 2)
+
+---
+
+📖 Project Overview
+The Hotel Booking & Billing System (HBBS) is a comprehensive console-based application developed in C#. It is designed using a strict 3-Tier Architecture (UI, Business Logic, and Data Access Layers) to manage hotel operations efficiently. The system provides role-based access for Administrators and Staff, featuring persistent data storage via File Handling.
+
+✨ Core Features
+
+🛡️ Admin Portal
+User Management: Add, remove, and update credentials for Admins and Staff members.
+Room Management: Add new rooms, update room prices, and manage room availability status.
+System Monitoring: View comprehensive lists of all registered staff, admins, and current room statuses.
+
+🛎️ Staff Portal
+Booking Management:Check-in and check-out guests, update booking details, and cancel reservations.
+Billing System:Automatically calculate total stay costs and generate invoices upon check-out.
+Room Tracking: View all available rooms and active bookings in real-time.
+
+🏗️ System Architecture
+This project strictly adheres to the Single Responsibility Principle (SRP) by separating code into three distinct layers:
+
+1. UI Layer (`HBBS.UI`): Handles all Console inputs and outputs. Separated into specific classes (`AdminUI`, `StaffUI`, `RoomUI`, `BookingUI`) for clean routing.
+2. Business Logic Layer (`HBBS.BL`): Contains the core entities (`Admin`, `Staff`, `Room`, `Registerations`, `Billing`). Implements OOP concepts like Inheritance, Composition, and Aggregation.
+3. Data Layer (`HBBS.DL`): Manages all persistent data through File Handling (`.txt` files). Implements CRUD operations and ensures data integrity across application restarts.
